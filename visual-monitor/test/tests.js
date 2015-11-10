@@ -22,8 +22,14 @@ describe('Visual monitor testing', function() {
       .webdrivercss(config.testName + '.homepage', {
         name: '1',
         exclude: [],
-        remove: [],
-        hide: [],
+        remove: [
+          ".hero-text .fa-angle-down",
+          ".social.ember-application"
+        ],
+        hide: [
+          "#intro-video",
+          ".musing-list"
+        ],
         screenWidth: config.selectedCaps == 'chrome' ? [640, 960, 1200] : undefined,
       }, config.resultsCallback)
       .call(done);
