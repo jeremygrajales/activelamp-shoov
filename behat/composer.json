@@ -1,0 +1,10 @@
+{
+  "name": "Behat tests for http://activelamp.com",
+  "description": "Functional testing for http://activelamp.com site.",
+  "require": {
+    "drupal/drupal-extension": "~3.0"
+  },
+  "config": {
+    "bin-dir": "bin/"
+  }
+}
